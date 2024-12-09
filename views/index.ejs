@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dogster</title>
+</head>
+<body>
+        <h1>Dogster🐶</h1>
+
+        <div class="menu container">
+            <% for (let i = 0;i < locals.obj.length;i++) { %>
+                
+                    <button class="menu-button" type="submit" for><%= locals.obj.array[i] %></button>    
+                        
+            <% } %>
+        </div>
+
+        <div class="image-main-container">
+            <div class="image-container">
+                <img class="img1" src="" alt="">
+            </div>
+            <div class="image-container">
+                <img class="img2" src="" alt="">
+            </div>
+            <div class="image-container">
+                <img class="img3" src="" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Made by <a href="https://github.com/tsn67"><span>Tom Sebastian </span></a></p>
+            <img class="logo" src="./github.svg" alt=""> 
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>
